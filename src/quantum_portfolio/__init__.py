@@ -5,4 +5,8 @@ __all__ = [
     "optimizer",
     "evaluation",
     "qubo",
+    "ising",
+    "qaoa_circuit",
+    "qaoa_optimizer",
+    "qaoa_results",
 ]

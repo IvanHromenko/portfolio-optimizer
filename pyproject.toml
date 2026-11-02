@@ -5,12 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "quantum-portfolio"
 version = "0.1.0"
-description = "Classical portfolio optimizer (Phase 1)"
+description = "Classical and QAOA portfolio optimization experiment"
 authors = [ { name = "ivan.gromenko" } ]
 dependencies = ["numpy", "pandas", "matplotlib"]
 
 [project.optional-dependencies]
 test = ["pytest"]
+quantum = ["qiskit", "qiskit-aer", "scipy"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
