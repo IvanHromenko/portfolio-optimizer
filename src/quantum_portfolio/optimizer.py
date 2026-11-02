@@ -10,6 +10,8 @@ def evaluate_portfolios(
     market_data.validate()
     n = len(market_data.assets)
     portfolios = generate_portfolios(n, k)
+    if not portfolios:
+        raise ValueError("No feasible portfolios are available")
 
     results: List[PortfolioResult] = []
     for sel in portfolios:

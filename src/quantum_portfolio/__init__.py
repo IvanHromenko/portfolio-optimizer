@@ -4,4 +4,5 @@ __all__ = [
     "portfolio",
     "optimizer",
     "evaluation",
+    "qubo",
 ]
